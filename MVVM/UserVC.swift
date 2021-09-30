@@ -13,9 +13,9 @@ class UserVC: UIViewController {
     var Status = ""
     var UserArray : UserModel!
     var ArrUsers = [UserModel]()
-    var context : ViewController!
+    var context : UserModel!
     var userEdit = ""
-    
+  var selected: String? = ""
     @IBOutlet weak var lblID: UILabel!
     @IBOutlet weak var UserDetailEditStack: UIStackView!
     @IBOutlet weak var lblStatus: UILabel!
@@ -30,6 +30,10 @@ class UserVC: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
+     
+     lblID.text = selected
+     lblStatus.text = selected
+     lblTitle.text = selected
         UserDetailEditStack.isHidden = true
         if userEdit == "1"{
             UserDetialStack.isHidden = true
@@ -53,10 +57,10 @@ class UserVC: UIViewController {
 //        lblStatus.text = "\(Bool(UserArray.completed!))"
 //        lblTitle.text = UserArray.title
 //
-        let userId : String = String(context.viewModelUser.arrUsers[0].id!)
+     let userId : String = String(context.id!)
         lblID.text = userId
-        lblStatus.text = "\(Bool(context.viewModelUser.arrUsers[0].completed!))"
-        lblTitle.text = context.viewModelUser.arrUsers[0].title!
+        lblStatus.text = "\(Bool(context.completed!))"
+        lblTitle.text = context.title!
         
 //        lblID.text = mainID
 //        lblStatus.text = mainstatus

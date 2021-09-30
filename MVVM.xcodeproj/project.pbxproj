@@ -34,7 +34,7 @@
 		A1F806AB26E5D71000AF1787 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		A1F806AD26E5DFCE00AF1787 /* userCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userCell.swift; sourceTree = "<group>"; };
 		A1F806AE26E5DFCE00AF1787 /* userCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = userCell.xib; sourceTree = "<group>"; };
-		A1F806B426E612DC00AF1787 /* UserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; };
+		A1F806B426E612DC00AF1787 /* UserVC.swift */ = {isa = PBXFileReference; indentWidth = 1; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; tabWidth = 3; wrapsLines = 1; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
